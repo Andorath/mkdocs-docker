@@ -13,14 +13,12 @@ This is the command for creating a new project in a local folder.
 
 	docker run -it --rm -v /absolute/path/to/local/folder:/docs marsala/mkdocs new myProject
 
-The flag `--rm` is necessary just for autoremoving the container when execution completes. You have to remove `/absolute/path/to/local/folder`
-with the real absolute path to the local folder obviously. A new folder for `myProject` will be created in the path you will provide.
+The flag `--rm` is necessary just for autoremoving the container when execution completes. You have to remove `/absolute/path/to/local/folder` with the real absolute path to the local folder obviously. A new folder for `myProject` will be created in the path you will provide.
 
 Build the docs
 --------------
 
-Let's assume we have just created the new project of the previous command. To build `myProject` project you must move in the project folder
-with:
+Let's assume we have just created the new project of the previous command. To build `myProject` project you must move in the project folder with:
 
 	cd myProject
 
@@ -28,8 +26,7 @@ and use the following command:
 
 	docker run -it --rm -v /absolute/path/to/local/folder:/docs marsala/mkdocs build
 
-this will generate a folder `site` in `/absolute/path/to/local/folder`. If you want generate the site in another folder you can use `/docs/site`
-as volume. This is the command for duing it:
+this will generate a folder `site` in `/absolute/path/to/local/folder`. If you want generate the site in another folder you can use `/docs/site` as volume. This is the command for doing it:
 
 	docker run -it --rm -v /absolute/path/to/local/folder:/docs -v /absolute/local/folder/site:/docs/site  marsala/mkdocs build 
 
