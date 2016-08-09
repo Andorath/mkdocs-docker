@@ -1,4 +1,4 @@
-MkDoks (docker image)
+MkDocs (docker image)
 ======================
 
 This image will provide you all the funcionality of mkdocs from [mkdocs](www.mkdocs.org).
