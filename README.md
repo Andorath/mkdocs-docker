@@ -1,5 +1,3 @@
-# mkdocs-docker
-
 MkDoks (docker image)
 ======================
 
